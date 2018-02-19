@@ -1,0 +1,53 @@
+.wrapper {
+  padding: 15px;
+}
+
+.wrapper h1 {
+  display: block;
+  color: red;
+  text-align: center;
+  font-size: 50px;
+}
+
+.planetBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  .planetBox {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  }
+}
+
+@media screen and (max-width: 800px) {
+    .planetBox {
+      grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+@media screen and (max-width: 600px) {
+  .planetBox {
+    grid-template-columns: 1fr;
+  }
+}
+
+.itemBox {
+  display: inline-block;
+  padding: 5px;
+  text-align: left;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 5px;
+}
+
+.itemBox h2 {
+  text-align: center;
+  background: #ccc;
+  margin: -5px;
+  padding: 5px;
+}
+
+.itemBox p span {
+  color: #777;
+}
